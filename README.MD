@@ -22,14 +22,14 @@ Projeto Final - Programação Concorrente e IPC/
 
 ## 🛠 Tecnologias e Conceitos Utilizados
 
-| Conceito                      | Implementação no Código                                                      |
-| :---------------------------- | :--------------------------------------------------------------------------- |
-| **Threads POSIX**             | `pthread_create` para criar Garçons e Pizzaiolos.                            |
-| **Processos**                 | `fork()` cria o processo de Delivery; `waitpid()` aguarda finalização.       |
-| **Exclusão Mútua**            | `pthread_mutex_t` protege a fila de pedidos e o `stdout` (logs).             |
-| **Sincronização Condicional** | `pthread_cond_t` (cheio/vazio) coordena a fila entre Garçons e Pizzaiolos.   |
+| Conceito                      | Implementação no Código                                                          |
+| :---------------------------- | :------------------------------------------------------------------------------- |
+| **Threads POSIX**             | `pthread_create` para criar Garçons e Pizzaiolos.                                |
+| **Processos**                 | `fork()` cria o processo de Delivery; `waitpid()` aguarda finalização.           |
+| **Exclusão Mútua**            | `pthread_mutex_t` protege a fila de pedidos e o `stdout` (logs).                 |
+| **Sincronização Condicional** | `pthread_cond_t` (cheio/vazio) coordena a fila entre Garçons e Pizzaiolos.       |
 | **Controle do Forno**         | Mutex + condition variable limitando quantas pizzas podem assar simultaneamente. |
-| **IPC (Comunicação)**         | `pipe()` (unnamed pipe) envia pedidos prontos ao processo Delivery.          |
+| **IPC (Comunicação)**         | `pipe()` (unnamed pipe) envia pedidos prontos ao processo Delivery.              |
 
 ## 📋 Descrição do Fluxo
 
@@ -64,21 +64,6 @@ gcc src/pizzaria.c -o pizzaria -pthread
 ```
 
 O binário gerado via `make` fica em `build/pizzaria`.
-
-## 📦 Preparação para o GitHub
-
-1. Inicialize o repositório local:
-   ```bash
-   git init
-   git add .
-   git commit -m "Projeto Final - Programação Concorrente e IPC"
-   ```
-2. Crie um repositório remoto chamado **“Projeto Final - Programação Concorrente e IPC”**.
-3. Associe o remoto e envie:
-   ```bash
-   git remote add origin git@github.com:<usuario>/Projeto-Final-Programacao-Concorrente-e-IPC.git
-   git push -u origin main
-   ```
 
 ## ⚙️ Fluxo de Execução (Resumo)
 
