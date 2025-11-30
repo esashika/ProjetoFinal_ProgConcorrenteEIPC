@@ -1,0 +1,8 @@
+# Build artifacts
+pizzaria
+*.o
+*.out
+*.log
+
+# macOS metadata
+.DS_Store
