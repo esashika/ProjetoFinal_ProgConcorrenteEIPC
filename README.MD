@@ -4,9 +4,7 @@ Simulação completa de uma pizzaria concorrente desenvolvida para a disciplina 
 
 ## 👥 Equipe
 
-- Chrystian Caldas
 - Edward Junior
-- Fabio Braz
 - Isabella Cabral
 - Rhedson Esashika
 
